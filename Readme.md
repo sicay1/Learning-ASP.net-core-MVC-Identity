@@ -1,9 +1,12 @@
 # New project
 ## Web asp.net core mvc + authen individual user account --> store in app
-
+<img src="images/1.png">
 
 
 ## Build, run project, register user
+<img src="images/2.png">
+
+
 
 
 
@@ -63,14 +66,14 @@ Startup
 ### Update-Database
 ### Case1 remove 20190428161315_Init.cs
 ### Update-Database
-
+<img src="images/3.png">
 
 check DB table --> already have custom field
 
 
 
 Run project
-
+<img src="images/4.png">
 
 
 
@@ -89,7 +92,7 @@ Areas > add scrafold item > identity >
 	~/Views/Shared/_Layout.cshtml
 	file Account\register (Optional) and Account\Manage\index
 	ApplicationDbContext
-
+<img src="images/5.png">
 
 
 		
@@ -206,7 +209,4 @@ Index
                 </div>
 ```
 
-
-Done
-
-
+<img src="images/6.png">
