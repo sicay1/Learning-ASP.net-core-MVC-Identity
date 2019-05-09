@@ -210,3 +210,21 @@ Index
 ```
 
 <img src="images/6.png">
+
+
+
+
+
+
+
+Disable REGISTER
+comment all code in page and pageModel
+ExternalLogin.cshtml
+ForgotPassword.cshtml
+ForgotPasswordConfirmation.cshtml
+Register.cshtml
+ResetPassword.cshtml
+ResetPasswordConfirmation.cshtml
+Pages > Account > Manage > ExternalLogin.cshtml
+
+
