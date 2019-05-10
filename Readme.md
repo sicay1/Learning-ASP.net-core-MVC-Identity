@@ -217,14 +217,14 @@ Index
 
 
 
-Disable REGISTER
-comment all code in page and pageModel
-ExternalLogin.cshtml
-ForgotPassword.cshtml
-ForgotPasswordConfirmation.cshtml
-Register.cshtml
-ResetPassword.cshtml
-ResetPasswordConfirmation.cshtml
-Pages > Account > Manage > ExternalLogin.cshtml
+###Disable REGISTER
+- comment all code in page and pageModel
+- ExternalLogin.cshtml
+- ForgotPassword.cshtml
+- ForgotPasswordConfirmation.cshtml
+- Register.cshtml
+- ResetPassword.cshtml
+- ResetPasswordConfirmation.cshtml
+- Pages > Account > Manage > ExternalLogin.cshtml
 
 
