@@ -217,7 +217,7 @@ Index
 
 
 
-###Disable REGISTER
+### Disable REGISTER
 - comment all code in page and pageModel
 - ExternalLogin.cshtml
 - ForgotPassword.cshtml
