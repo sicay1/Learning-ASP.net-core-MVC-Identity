@@ -228,3 +228,27 @@ Index
 - Pages > Account > Manage > ExternalLogin.cshtml
 
 
+# Change MSSQL server to local SQLite db
+nuget: `Microsoft.EntityFrameworkCore.Sqlite.Core`
+
+Program.cs
+```csharp
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(connectionString));
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlite(connectionString));
+```
+
+appsettings.json
+```json
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=(localdb)\\mssqllocaldb;Database=aspnet-MoonWeb-1c125de0-dfab-4cfe-a0dc-2e6c61a87b23;Trusted_Connection=True;MultipleActiveResultSets=true"
+  },
+
+  "ConnectionStrings": {
+    "DefaultConnection": "Filename=MyDatabase.db"
+  },
+```
+Add-Migration init
+Update-Database
