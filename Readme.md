@@ -252,3 +252,36 @@ appsettings.json
 ```
 Add-Migration init
 Update-Database
+
+
+# Add Role
+
+Program.cs
+```csharp
+builder.Services.AddDefaultIdentity<IdentityUser>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = true;
+    options.User.RequireUniqueEmail = true;
+
+})
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<ApplicationDbContext>();
+
+...
+
+app.UseRouting();
+
+
+using (var scope = app.Services.CreateScope())
+{
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+    var roles = new[] { "Admin", "User" };
+    foreach (var role in roles)
+    {
+        if (!await roleManager.RoleExistsAsync(role))
+            await roleManager.CreateAsync(new IdentityRole(role));
+    }
+}
+```
+
+run project will create 2 rows in table `AspNetRoles`
