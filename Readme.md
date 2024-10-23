@@ -285,3 +285,26 @@ using (var scope = app.Services.CreateScope())
 ```
 
 run project will create 2 rows in table `AspNetRoles`
+
+
+# Model validation
+
+Ref: https://learn.microsoft.com/en-us/aspnet/core/mvc/models/validation?view=aspnetcore-8.0
+
+### Built-in attributes
+
+Here are some of the built-in validation attributes:
+
+- `[ValidateNever]`: Indicates that a property or parameter should be excluded from validation.
+- `[CreditCard]`: Validates that the property has a credit card format. Requires jQuery Validation Additional Methods.
+- `[Compare]`: Validates that two properties in a model match.
+- `[EmailAddress]`: Validates that the property has an email format.
+- `[Phone]`: Validates that the property has a telephone number format.
+- `[Range]`: Validates that the property value falls within a specified range.
+- `[RegularExpression]`: Validates that the property value matches a specified regular expression.
+- `[Required]`: Validates that the field isn't null. See [Required] attribute for details about this attribute's behavior.
+- `[StringLength]`: Validates that a string property value doesn't exceed a specified length limit.
+- `[Url]`: Validates that the property has a URL format.
+- `[Remote]`: Validates input on the client by calling an action method on the server. See [Remote] attribute for details about this attribute's behavior.
+
+
